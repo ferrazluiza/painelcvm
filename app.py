@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from .data import get_data
+from src.data import get_data
 
 app = Flask(__name__)
 
