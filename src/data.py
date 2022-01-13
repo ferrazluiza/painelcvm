@@ -81,7 +81,7 @@ def get_data():
 
     rows = []
     for nome, filtro_data in filtros.items():
-      response = requests.post('https://www.rad.cvm.gov.br/ENET/frmConsultaExternaCVM.aspx/ListarDocumentos', headers=headers, data=filtro_data, cookies = cookies)
+      response = requests.post('https://www.rad.cvm.gov.br/ENET/frmConsultaExternaCVM.aspx/ListarDocumentos', headers=headers, data=filtro_data, cookies = cookies, verify=False)
       dados = ("&*" + response.json()['d']['dados']).split("$&")[:-1]
       # como deu pra ver no split lá em cima, cada 12 linhas dizem respeito aos dados de uma única empresa
       # então eu quero que o programa leve em conta cada 12 tempos como uma linha no df 
