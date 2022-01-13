@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def pagina_inicial():
     return """
-        <h1><p>Olá!</h1> 
+        <h1><p>Dashboard CVM</h1> 
         Este site faz uma coleta automatizada de relatórios publicados no sistema da CVM a cada 5 minutos. Para saber mais sobre os filtros utilizados,
         <p>
          você pode ler a sessão "Quem & como".</p> 
