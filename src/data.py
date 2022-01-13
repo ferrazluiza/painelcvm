@@ -6,6 +6,8 @@ import requests
 from bs4 import BeautifulSoup as bs
 import pandas as pd
 
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+
 remove_span = re.compile(r"\<\/?spanOrder\>") # item que não sei o que é, mas que aparece várias vezes; quero tirar para visualizar melhor
 extract_document = re.compile(r"frmExibirArquivoIPEExterno\.aspx\?NumeroProtocoloEntrega=\d+") # parte do link para visualizar o documento
 remove_date = re.compile(r"\<spanOrder\>\d+\<\/spanOrder\> ") # mais uma vez aparecendo
