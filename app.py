@@ -12,7 +12,7 @@ def quemcomo():
 
 @app.route("/")
 def pagina_inicial():
-    table = get_data().drop(columns = ["filtro", "Código_CVM", "Espécie", "Data_Referência", "Status", "V", "Modalidade"])
+    table = get_data().drop(columns = ["filtro", "Código_CVM", "Espécie", "Data_Referência", "Status", "V", "Modalidade"]).sort_values(by = "Data_Entrega", ascending = False)
     return f"""
         <h1><p>Dashboard CVM</h1> 
         Este site faz uma coleta automatizada de relatórios publicados no sistema da CVM a cada 5 minutos. Para saber mais sobre os filtros utilizados,
