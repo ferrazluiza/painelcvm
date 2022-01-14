@@ -68,6 +68,7 @@ def get_data():
         press_release = "{ dataDe: '', dataAte: '' , empresa: '', setorAtividade: '-1', categoriaEmissor: '-1', situacaoEmissor: '-1', tipoParticipante: '1', dataReferencia: '', categoria: 'IPE_-1_29_-1', periodo: '0', horaIni: '', horaFim: '', palavraChave:'',ultimaDtRef:'false', tipoEmpresa:'0', token: '', versaoCaptcha: ''}",
         fato_relevante = "{ dataDe: '', dataAte: '' , empresa: '', setorAtividade: '-1', categoriaEmissor: '-1', situacaoEmissor: '-1', tipoParticipante: '1', dataReferencia: '', categoria: 'IPE_4_-1_-1', periodo: '0', horaIni: '', horaFim: '', palavraChave:'',ultimaDtRef:'false', tipoEmpresa:'0', token: '', versaoCaptcha: ''}",
         comunicado_mercado = "{ dataDe: '', dataAte: '' , empresa: '', setorAtividade: '-1', categoriaEmissor: '-1', situacaoEmissor: '-1', tipoParticipante: '1', dataReferencia: '', categoria: 'IPE_6_-1_-1', periodo: '0', horaIni: '', horaFim: '', palavraChave:'',ultimaDtRef:'false', tipoEmpresa:'0', token: '', versaoCaptcha: ''}",
+        aviso_acionistas = "{ dataDe: '', dataAte: '' , empresa: '', setorAtividade: '-1', categoriaEmissor: '-1', situacaoEmissor: '-1', tipoParticipante: '1', dataReferencia: '', categoria: 'IPE_3_-1_-1', periodo: '0', horaIni: '', horaFim: '', palavraChave:'',ultimaDtRef:'false', tipoEmpresa:'1', token: '', versaoCaptcha: ''}"
     )
 
     columns = ["filtro", "Código_CVM", "Empresa", "Categoria", "Tipo", "Espécie", "Data_Referência", "Data_Entrega", "Status", "V", "Modalidade", "Ações", "Resultado"]
