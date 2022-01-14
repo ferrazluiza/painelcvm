@@ -34,7 +34,6 @@ def get_date(date, fmt):
   return datetime.strptime(re_date, fmt)
 
 def get_data():
-
     # vendo se as variáveis que criei funcionam como fitro
     cookies = {}
     headers = {
@@ -100,3 +99,6 @@ def get_data():
       df[col] = df[col].apply(get_date, fmt = fmt)
 
     return df
+
+if __name__ == "__main__":
+  get_data().to_csv("")
