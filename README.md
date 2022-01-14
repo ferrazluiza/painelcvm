@@ -19,6 +19,12 @@ Basta atualizar a página para visualizar, ordenado do mais recente para o mais 
 - `re`
 - `datetime`
 
+## Reproduzindo localmente
+
+1. `git clone https://github.com/ferrazluiza/painelcvm`
+2. `pip install -r requirements.txt`
+3. `flask run` 
+4. E você deveria conseguir ver: `Running on http://127.0.0.1:5000/`
 
 ## O que vem por aí
 - Opção de visualização apenas com empresas do Ibovespa
@@ -27,6 +33,8 @@ Basta atualizar a página para visualizar, ordenado do mais recente para o mais 
 ## Contribua!
 
 - Faça o fork do projeto (https://github.com/ferrazluiza/painelcvm)
+
+    `git clone https://github.com/ferrazluiza/painelcvm`
 - Crie uma branch para sua modificação
 - Faça o commit
 - Push
