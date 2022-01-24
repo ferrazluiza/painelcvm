@@ -99,7 +99,7 @@ def get_data():
     for col, fmt in date_columns.items():
       df[col] = df[col].apply(get_date, fmt = fmt)
 
-    return df
+    return df.drop_duplicates(subset = ["Empresa", "Resultado"])
 
 if __name__ == "__main__":
   get_data().to_csv("")
